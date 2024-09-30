@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("/../images/fondoBody.jpg");
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #323b42;
+    justify-content: center;
+    
+}
+.navbarPer{
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0px;
+}
+
+.titulo {
+    justify-content: center;
+    font-size: 70px;
+}
+
+nav {
+    background-color: #323b42;
+    padding: 15px;
+    text-align: justify;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.contenedor1 {
+    display: flex;
+    margin: 20px 0;
+}
+
+aside {
+    width: 30%;
+    background-color: #bbdefb;
+    padding: 20px;
+}
+aside h3 {
+    font-family: Georgia;
+    font-size: 25px;
+}
+article h3 {
+    font-family: Georgia;
+    font-size: 25px;
+}
+.Fuente {
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+main {
+    width: 70%;
+    padding: 20px;
+    background-color: #e3f2fd;
+}
+.carousel{
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(3, 95, 95);
+    color: #fff;
+    padding: 20px;
+}
+
+footer div {
+    width: 45%;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #bbdefb;
+}
+.flex-item {
+    background-color: #5ea5e4;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor1 {
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .Imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Imagenes img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .contenedor1 aside{
+        background-color:darkolivegreen;
+    }
+}
